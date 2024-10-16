@@ -28,13 +28,15 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         const removeButton = document.createElement("span");
-        removeButton.className = "text-red-500 cursor-pointer ml-4";
+        removeButton.className = "text-red-500 cursor-pointer ml-4 rounded p-2 hover:bg-gray-300";
         removeButton.innerHTML = `<i class="fas fa-trash-alt"></i>`;
         removeButton.addEventListener("click", (e) => {
             e.stopPropagation();
             listItem.remove();
             removeItem(name);
         });
+
+
         listItem.appendChild(removeButton);
 
         itemList.appendChild(listItem);
