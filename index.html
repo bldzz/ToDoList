@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome for trash icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gradient-to-b from-blue-500 to-blue-800 min-h-screen flex items-center justify-center">
+
+    <div class="container bg-white rounded-lg shadow-lg p-6 max-w-lg min-w-[300px] mx-auto">
+        <h1 class="text-4xl font-extrabold text-center mb-6 text-gray-800 bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text">
+            Shopping List
+        </h1>
+
+        <div class="flex items-center space-x-3 mb-6">
+            <input id="itemInput" type="text" placeholder="Enter item" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-300">
+            <button id="addItemButton" class="px-4 py-2 bg-black text-white font-semibold rounded-lg hover:bg-blue-800">Add</button>
+        </div>
+
+        <ul id="itemList" class="list-none space-y-3">
+            <!-- Items will be dynamically added here -->
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

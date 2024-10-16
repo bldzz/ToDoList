@@ -1,0 +1,17 @@
+.purchased {
+    text-decoration: line-through;
+    background-color: #d3d3d3;
+    color: #666;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove-button {
+    margin-left: 10px;
+    color: red;
+    cursor: pointer;
+}
